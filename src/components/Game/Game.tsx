@@ -42,10 +42,12 @@ const Game: React.FC = () => {
       if (residue !== 0) {
         matchesToTake = residue;
       } else {
-        const potentialMatchesToTake = Math.floor(Math.random() * 3) + 1;
-        matchesToTake = (scores[1] + potentialMatchesToTake) % 2 === 0 
-          ? potentialMatchesToTake 
-          : potentialMatchesToTake - 1;
+        let potentialMatchesToTake = Math.floor(Math.random() * 3) + 1;
+        if ((scores[1] + potentialMatchesToTake) % 2 === 0) {
+          matchesToTake = potentialMatchesToTake;
+        } else {
+          matchesToTake = potentialMatchesToTake === 1 ? potentialMatchesToTake + 1 : potentialMatchesToTake - 1;
+        }
       }
     }
   
