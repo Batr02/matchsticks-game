@@ -1,0 +1,29 @@
+.gameModeSelector {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 1em;
+ }
+ 
+ .gameModeSelector div {
+   margin: 0 1em;
+ }
+ 
+ .gameModeSelector input[type='radio'] {
+   display: none;
+ }
+ 
+ .gameModeSelector input[type='radio'] + label {
+   padding: 0.5em 1em;
+   font-size: 1em;
+   color: #fff;
+   background-color: #1836df;
+   border-radius: 0.3em;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .gameModeSelector input[type='radio']:checked + label {
+   background-color: #060f74; 
+   color: #fff;
+   border-color: #000;
+ }

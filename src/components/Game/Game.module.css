@@ -1,0 +1,37 @@
+.gameContainer {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+ } 
+ 
+.gameStatus {
+  margin: 20px 0;
+} 
+
+.gameModeContainer {
+  margin: 2em auto;
+  text-align: center;
+} 
+
+.gameModeButton {
+  margin: 2em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  color: #fff;
+  background-color: #4caf50; 
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gameModeButton:hover {
+  background-color: #43a047; 
+} 
+
+.gameModeButton:active {
+  background-color: #388e3c; 
+} 
